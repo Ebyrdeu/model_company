@@ -1,0 +1,51 @@
+.navbar
+    height: 55px
+    background-color: $light
+    opacity: 0.9 
+    box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28)
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 55px
+    &-links
+        &__text
+            color: $main-color
+            font-size: 15px
+            text-decoration: none
+            border-bottom: solid 1px $sub-sub-color
+            margin-right: 0
+            line-height: 1.4
+            margin-right: 40px
+            &:last-child
+                margin-right: 0px
+    &-contacts
+        &__tel
+            color: $main-color
+            text-decoration: none
+            font-size: 17px
+            display: block
+            text-align: right
+            +bold
+        &__link
+            display: block
+            color: $contacts
+            text-decoration: none
+            border-bottom: 1px solid $contacts
+            font-size: 14px
+@media (max-width: 1200px)
+        .navbar
+            &-links
+                &__text
+                    font-size: 15px
+                    margin-right: 20px
+            &-contacts
+                display: none
+@media (max-width:  768px)
+        .navbar
+            height: 60px
+            &-links
+                text-align: center
+                &__text
+                    font-size: 15px
+                    margin-right: 10px
